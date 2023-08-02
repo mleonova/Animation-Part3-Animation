@@ -45,7 +45,8 @@ animation {
        ...
     }
     ...
-}```
+}
+```
 
 #### ```time_start``` and ```time_end``
 
