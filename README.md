@@ -83,6 +83,15 @@ These variables represent the tangent types for the keyframe. Tangents control h
 
 ## Process
 
+When program first reads the .anim file and parses its contents to extract the animation data, it identifies the time range, number of channels, and for each channel, the extrapolation mode, and the keyframes with their respective values and tangent types.
+
+The program processes the keyframes for each channel. Keyframes represent important poses or moments in the animation. By analyzing the time values of the keyframes, the program sets up a timeline for the animation.
+
+To create smooth animation transitions between keyframes, interpolation is performed. The program calculates the in-between frames, also known as tweens, that smoothly connect the keyframes. Interpolation ensures that the animation flows seamlessly, without abrupt jumps or flickering.
+
+The program also handles extrapolation, which defines how the animation behaves beyond the specified time range. Depending on the extrapolation mode (constant, linear, cycle, cycle_offset, or bounce), the program extends the animation to fit the desired behavior.
+
+Finally, the program plays back the animation on the skinned character, rendering each frame with the specified transformations. The animation comes to life, showcasing smooth motion and fluid transitions between keyframes.
 
 ## Demo
 
