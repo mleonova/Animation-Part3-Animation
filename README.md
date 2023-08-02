@@ -48,7 +48,7 @@ animation {
 }
 ```
 
-#### ```time_start``` and ```time_end``
+#### ```time_start``` and ```time_end```
 
 These variables represent the time range in seconds that the animation is intended to play. The animation will be active and affect the character's motion within this time range. It's important to note that this range may not necessarily correspond to the times of the first and last keyframes in the animation.
 
